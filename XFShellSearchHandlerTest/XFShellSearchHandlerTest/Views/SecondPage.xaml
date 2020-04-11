@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFShellSearchHandlerTest.Views.SecondPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IconOverride="alarm.png" TextOverride="Back" />
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                BackgroundColor="LightBlue"
+                HorizontalOptions="CenterAndExpand"
+                StyleClass="FontSizeLarge"
+                Text="This is Second Page."
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFShellSearchHandlerTest.Views.SearchPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XFShellSearchHandlerTest.Controls"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Shell.SearchHandler>
+        <controls:MySearchHandler
+            BackgroundColor="LightGreen"
+            ClearPlaceholderEnabled="True"
+            DisplayMemberName="FirstName"
+            Placeholder="hello"
+            ShowsResults="true" />
+    </Shell.SearchHandler>
+    <!--<Shell.SearchHandler>
+        <controls:MySearchHandler
+            BackgroundColor="LightGreen"
+            ClearPlaceholderEnabled="True"
+            Placeholder="hello"
+            SearchBoxVisibility="Expanded"
+            ShowsResults="true">
+            <controls:MySearchHandler.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label
+                            BackgroundColor="AliceBlue"
+                            StyleClass="FontSizeLarge"
+                            Text="{Binding FirstName}" />
+                        <Label Text="{Binding Age}" />
+                    </StackLayout>
+                </DataTemplate>
+            </controls:MySearchHandler.ItemTemplate>
+        </controls:MySearchHandler>
+    </Shell.SearchHandler>-->
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                BackgroundColor="LightGreen"
+                HorizontalOptions="CenterAndExpand"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
