@@ -13,7 +13,8 @@
             ClearPlaceholderEnabled="True"
             DisplayMemberName="FirstName"
             Placeholder="hello"
-            ShowsResults="true" />
+            SearchBoxVisibility="Collapsible"
+            ShowsResults="False" />
     </Shell.SearchHandler>
     <!--<Shell.SearchHandler>
         <controls:MySearchHandler

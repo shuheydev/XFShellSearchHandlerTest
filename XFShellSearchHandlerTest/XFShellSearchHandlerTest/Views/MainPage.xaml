@@ -10,7 +10,8 @@
     <StackLayout>
         <!--  Place new controls here  -->
         <Label
-            BackgroundColor="Pink"
+            FontFamily=""
+            BackgroundColor="LightPink"
             HorizontalOptions="Center"
             StyleClass="FontSizeLarge"
             Text="This is Main Page."
